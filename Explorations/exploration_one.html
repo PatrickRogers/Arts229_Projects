@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exploration One</title>
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:700|Roboto|Open+Sans" rel="stylesheet">
+<style>
+
+html {
+	background-color: #D1D2D3;
+}
+
+body {
+	padding: 0;
+	width: 1280px;
+	background-color: white;
+	margin: 0 auto;
+	font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  width: 71.95%;
+	margin: 0;
+  margin-left: -2px;
+	height: 50px;
+	background-color: rgba(0,0,0,0.80);
+	position: fixed;
+	top: 0;
+	z-index: 5000;
+}
+
+.quick-links {
+	padding: 15px;
+	text-transform: uppercase;
+	width: 960px;
+	margin: 0 auto;
+}
+
+.quick-links h2 {
+	margin: 0;
+	color: #999999;
+	font-size: 16px;
+	display: inline;
+  position: relative;
+  left: 330px;
+}
+
+.quick-links ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline;
+  position: relative;
+  left: 330px;
+}
+
+.quick-links li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.quick-links a {
+	color: white;
+	text-decoration: none;
+}
+
+.quick-links a:hover {
+	color: #3fa9f5;
+}
+
+
+.header img {
+  position: relative;
+  top: 290px;
+  left: 340px;
+}
+
+.feature {
+	background-color: white;
+	height: 500px;
+	position: relative;
+}
+
+.feature img {
+  margin-top: -311px;
+}
+
+.info {
+	clear: both;
+	height: 290px;
+	padding: 0 80px;
+	position: relative;
+	left: 50px;
+	bottom: 50px;
+  color: #3D3D3D;
+  margin-top: 120px;
+}
+
+.jiu-jitsu-tips {
+	width: 270px;
+	margin-right: 100px;
+	float: left;
+  position: relative;
+  text-align: center;
+  left: 5px;
+}
+
+.info h2 {
+	font-size: 27px;
+	font-family: Montserrat;
+	margin: 0;
+  color: black;
+  position: relative;
+  text-align: center;
+}
+
+.variety {
+	height: 400px;
+	background-repeat: no-repeat;
+  position: relative;
+  right: 160px;
+}
+
+.container {
+  width  : 960px;
+  margin : 0 auto;
+}
+
+.container:after{
+  clear   : both;
+  display : table;
+  content : '';
+}
+
+.items {
+  width  : 1280px;
+  height : 400px;
+  position: relative;
+  overflow: hidden;
+  background-color: #102B46;
+}
+
+.details {
+  background-color : rgba(0,0,0,0.5);
+  width            : 1280px;
+  height           : 400px;
+  padding          : 10px;
+  top : 0;
+  left: 0;
+  font-family : georgia;
+  color       : #fff;
+  opacity : 0;
+  transition : opacity .8s;
+}
+
+.details h3 {
+  margin-bottom : 100px;
+  position: relative;
+  left: 570px;
+  top: 50px;
+  font-size: 24px;
+}
+
+.details h6 {
+  text-align : center;
+  margin-top : 40px;
+}
+
+.details p {
+  font-size : 18px;
+  font-style: italic;
+  text-align: center;
+  line-height : 20px;
+  position: relative;
+  right: 10px;
+}
+
+.items:hover .details {
+  opacity : 1;
+  transition : opacity .2s .3s;
+}
+
+.items div {
+  position : absolute;
+}
+
+/* seven */
+
+.seven {
+  width  : 1280px;
+  height : 400px;
+  background-color : #BC5062;
+  opacity : 0;
+  transition   : all .3s;
+}
+
+.items:hover .seven {
+  opacity    : 1;
+  transition : all .3s;
+}
+
+.quote {
+	background-color: white;
+	height: 400px;
+	text-align: center;
+  position: relative;
+  top: 125px;
+}
+
+.quote-text{
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 18px;
+	color: #BC5062;
+	position: relative;
+	top: 80px;
+}
+
+.quote blockquote {
+	margin: 0;
+}
+
+.quote-author {
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 12px;
+	display: block;
+}
+
+footer {
+	padding: 20px;
+  position: relative;
+  left: 560px;
+}
+
+.footer-logo {
+	width: 186px;
+	height: 50px;
+	float: left;
+	position: relative;
+	bottom: 5px;
+	left: -70px;
+}
+
+.footer-text {
+	font-size: 12px;
+	position: relative;
+	left: -145px;
+	font-family: Montserrat;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="quick-links">
+    <h2>Quick links</h2>
+      <ul>
+        <li><a href="#top">top</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#quote">quote</a></li>
+      </ul>
+  </div>
+</nav>
+
+<section class="feature">
+<article id="top">
+  <section class="header">
+    <img src="images/page-logo.png" alt="magic jiu-jitsu logo" />
+  </section>
+    <img src="images/JiuJitsu.jpg" alt="group picture" />
+</article>
+</section>
+
+<section class="info">
+  <div class="jiu-jitsu-tips">
+    <h2>PROMINENCE</h2>
+    <p>
+      Jiu-Jitsu came to international prominence in the martial arts community in the early 1900’s, when Brazilian jiu jitsu (BJJ) expert Royce Gracie won the first, second, and fourth Ultimate Fighting Championships, which at the time were single elimination martial arts tournaments.
+    </p>
+  </div>
+
+  <div class="jiu-jitsu-tips">
+    <h2>TRAINING</h2>
+    <p>
+      Sport BJJ focuses on submissions without the use of strikes while training allows practitioners to practice at full speed and with full power, resembling the effort used in a real competition. This includes technique drills, isolation sparring, and full sparring.
+    </p>
+  </div>
+
+  <div class="jiu-jitsu-tips">
+    <h2>SAFETY</h2>
+    <p>
+      Brazilian jiu-jitsu is one of the safest martial arts. However, it is very effective as a fighter could quickly dislocate their opponents joints or knock them out with a choke-hold if they choose to. The injury rate is around 9.2-38.6 per 1000 athlete exposures.
+    </p>
+  </div>
+</section>
+
+<section class="variety">
+<article id="about">
+  <div class="container">
+    <div class="bg-items">
+      <div class="items" style="background-image : url(images/WhatIsBJJ.jpg);">
+        <div class="seven"></div>
+        <div class="details">
+          <h3>Jiu Jitsu Is</h3>
+          <p>“Upholding the premise that most of the advantage of a larger, stronger opponent comes from superior reach and powerful strikes, both of which are mitigated when grappling on the ground, Brazilian jiu-jitsu emphasizes getting an opponent to the ground in order to use ground fighting techniques and submission holds involving joint-locks and choke-holds to either win or disengage from an altercation.”</p>
+          <h6>time &amp; date</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+</section>
+
+<section class="quote">
+  <article id="quote">
+    <blockquote class="quote-text">
+      “In the fight, only one person can be comfortable. Your job is to transfer the comfortable from your opponent to you.”
+      <span class="quote-author">-Rickson Gracie</span>
+    </blockquote>
+  </article>
+</section>
+
+<footer>
+  <img src="images/footer-logo.svg" alt="magic logo" class="footer-logo" />
+  <p class="footer-text">Copyright 2018</p>
+</footer>
+</body>
+</html>
