@@ -10,6 +10,22 @@
 
   <style>
 
+  body {
+    font-family: sans-serif;
+    background: #ccc;
+    width: 80vw;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  header {
+    margin-left: 85px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
 
   figure {
     width: 30vw;
@@ -22,48 +38,124 @@
     display: table;
   }
 
+  figcaption {
+    text-align: center;
+  }
+
+  nav {
+    align-content: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav ul a {
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    text-align: center;
+    padding: .53rem;
+    margin: .2rem;
+  }
+
+  .clearFloat {
+    float: none;
+    clear: both;
+  }
+
   @media screen and (min-width: 600px) {
     body {
-      background: #333;
-      color: #ccc;
+      background: #666;
+      color: white;
+      min-width: 600px;
+      max-width: 1200px;
+    }
+
+    h1 {
+      font-size: 25px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin: 0 auto;
     }
 
     figure {
       width: 15vw;
     }
+
+    article {
+      width: 70%;
+      margin-right: 5%;
+    }
+
+    nav ul a {
+      float: left;
+      width: 100px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
     body {
-      background: #666;
+      background: #333;
       color: yellow;
+      font-size: 24px;
+    }
+
+    header h1 {
+      font-size: 45px;
+      margin-left: 35px;
     }
 
     article {
-      float: left;
       width: 60%;
-      height: 100vh;
-      margin-right: 5%
+      margin-right: 5%;
     }
 
-    aside {
-      float: left;
-      width: 30%;
-    }
-
-    article::after, aside::after{
-      content: "";
+    section {
+      float: none;
       clear: both;
-      display: table;
+    }
+
+    nav ul a {
+      float: left;
+      width: 200px;
     }
   }
 
+  @media screen and (min-width: 1500px) {
+    body {
+      background: orange;
+      color: white;
+      font-size: 24px;
+    }
+
+    header h1 {
+      font-size: 65px;
+    }
+
+    h1 {
+      font-size: 42px;
+    }
+
+    nav ul a {
+      float: left;
+      width: 300px;
+    }
+
+    article {
+      width: 90%;
+      margin-right: 5%;
+    }
+  }
   </style>
+
 </head>
 
-<body data-gr-c-s-loaded="true">
+<body>
   <header>
-    <h1>This is the page heading</h1>
+    <h1>This is the Page Heading</h1>
   </header>
 
   <nav>
@@ -74,18 +166,32 @@
     </ul>
   </nav>
 
+  <br class="clearFloat"/>
+
   <article>
-    <h1>This is the article heading</h1>
+    <h1>This is the Article Heading</h1>
     <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those <a href="https://chad-bennett.github.io/home/post/lorem-ipsum/" target="_blank">lorem-ipsum generators</a> or you could write your own content. The choice is up to you as the designer. </p>
+      <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+
+      <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+      <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+
+
+      <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+      <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+
+      <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
   </article>
 
   <aside>
+    <p>
+      some more text here.
+    </p>
     <figure>
       <img src="./Media_Queries_Template_files/something.png" alt="image alt text goes here" title="image" height="100px" width="100px">
       <figcaption>Figure caption goes here</figcaption>
     </figure>
-
-    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+      <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
   </aside>
 
   <section>
@@ -99,15 +205,12 @@
     <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
 
     <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
-
   </section>
 
   <footer>
     <hr>
     <p>© Your Name Enterprises</p>
   </footer>
-
-
 
 
 </body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>flexbox demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+
+  section {
+    background: purple;
+    display: flex;
+    margin: 50px;
+  }
+
+  div {
+    background: darkseagreen;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+
+  .flex-container1 {
+    padding: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+  }
+
+  .flex-container1 div {
+    flex-basis:auto;
+    flex: 1;
+  }
+
+  .order1 {
+    order: -1;
+  }
+
+  .flex-container2 {
+    flex-direction: column;
+  }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>flexbox experiments</h1>
+  </header>
+
+  <section class="flex-container1">
+    <div>1</div>
+    <div class="order1">2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </section>
+
+  <section class="flex-container2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </section>
+
+  <section class="flex-container4">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </section>
+
+  <section class="flex-container4">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </section>
+
+  <section class="flex-container5">
+    <div>
+      <h2>title of main article</h2>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+    </div>
+    <div>
+      <h2>sidebar here</h2>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+    </div>
+    <div>
+      <h2>footer stuff here</h2>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+    </div>
+  </section>
+
+</body>
+
+</html>
