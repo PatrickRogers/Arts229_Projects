@@ -18,17 +18,93 @@ body {
 	font-family: "Open Sans", sans-serif;
 }
 
+.wrapper {
+	margin: 0 90%;
+	position: relative;
+	top: 5px;
+}
+.close-button {
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	overflow: hidden;
+}
+.close-button > div {
+	position: relative;
+}
+.close-button-block {
+	width: 40px;
+	height: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.close-button-block:before, .close-button-block:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: calc(55% - 4px);
+	display: block;
+	width: 4px;
+	height: 25px;
+	-webkit-transform-origin: bottom center;
+					transform-origin: bottom center;
+	background: white;
+	transition: all ease-out 280ms;
+}
+.close-button-block:last-of-type {
+	-webkit-transform: rotate(180deg);
+					transform: rotate(180deg);
+}
+.close-button .in .close-button-block:before {
+	transition-delay: 280ms;
+	-webkit-transform: translateX(20px) translateY(-20px) rotate(45deg);
+					transform: translateX(20px) translateY(-20px) rotate(45deg);
+}
+.close-button .in .close-button-block:after {
+	transition-delay: 280ms;
+	-webkit-transform: translateX(-22px) translateY(-22px) rotate(-45deg);
+					transform: translateX(-22px) translateY(-22px) rotate(-45deg);
+}
+.close-button .out {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.close-button .out .close-button-block:before {
+	-webkit-transform: translateX(-5px) translateY(5px) rotate(45deg);
+					transform: translateX(-5px) translateY(5px) rotate(45deg);
+}
+.close-button .out .close-button-block:after {
+	-webkit-transform: translateX(5px) translateY(5px) rotate(-45deg);
+					transform: translateX(5px) translateY(5px) rotate(-45deg);
+}
+.close-button:hover .in .close-button-block:before {
+	-webkit-transform: translateX(-5px) translateY(5px) rotate(45deg);
+					transform: translateX(-5px) translateY(5px) rotate(45deg);
+}
+.close-button:hover .in .close-button-block:after {
+	-webkit-transform: translateX(5px) translateY(5px) rotate(-45deg);
+					transform: translateX(5px) translateY(5px) rotate(-45deg);
+}
+.close-button:hover .out .close-button-block:before {
+	-webkit-transform: translateX(-20px) translateY(20px) rotate(45deg);
+					transform: translateX(-20px) translateY(20px) rotate(45deg);
+}
+.close-button:hover .out .close-button-block:after {
+	-webkit-transform: translateX(20px) translateY(20px) rotate(-45deg);
+					transform: translateX(20px) translateY(20px) rotate(-45deg);
+}
+
+
+
 nav {
-  width: 71.95%;
 	margin: 0;
-  margin-left: -2px;
 	height: 50px;
 	background-color: rgba(0,0,0,0.80);
-	position: fixed;
+	position: sticky;
 	top: 0;
 	z-index: 5000;
-	min-width: 1282px;
-	max-width: 1282px;
 }
 
 .quick-links {
@@ -45,6 +121,7 @@ nav {
 	display: inline;
   position: relative;
   left: 325px;
+	top: -40px;
 }
 
 .quick-links ul {
@@ -54,6 +131,7 @@ nav {
 	display: inline;
   position: relative;
   left: 330px;
+	top: -40px;
 }
 
 .quick-links li {
@@ -67,7 +145,7 @@ nav {
 }
 
 .quick-links a:hover {
-	color: #3fa9f5;
+	color: red;
 }
 
 
@@ -257,6 +335,20 @@ footer {
 <body>
 
 <nav>
+	<div class="wrapper">
+	    <a href="/Users/rogersp9/Google Drive/Art229_Rogers_Patrick/Arts229_Projects/index.html" class="close-button">
+	      <div class="in">
+	        <div class="close-button-block"></div>
+	        <div class="close-button-block"></div>
+	      </div>
+	      <div class="out">
+	        <div class="close-button-block"></div>
+	        <div class="close-button-block"></div>
+	      </div>
+	    </a>
+	  </div>
+
+
   <div class="quick-links">
     <h2>Quick links</h2>
       <ul>
