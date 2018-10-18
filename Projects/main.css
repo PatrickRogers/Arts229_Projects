@@ -3,25 +3,24 @@ html {
 }
 
 body {
-  margin: 0 auto;
   background-color: green;
 }
 
 nav {
   margin: 0 auto;
   text-align: center;
-  display: flex;
-  
 }
 
 nav ul {
-
+display: block;
+list-style: none;
+margin: 0;
+padding: 0;
+background-color: white;
+text-align: center;
 }
 
-nav ul a {
-  text-decoration: none;
-  background-color: white;
-  text-align: center;
-  padding: .53rem;
-  margin: 0 auto;
+nav ul li {
+  display: inline;
+
 }
