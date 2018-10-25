@@ -4,6 +4,35 @@
 <title>Annimation Examples</title>
 </head>
 
+<style>
+
+  #box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes example {
+    0%   {background-color: red;
+    transform: scale(1);
+    border-radius: 0;}
+
+    25%  {background-color: yellow;
+    transform: scale(1.5);
+    border-radius: 50%;}
+
+    50%  {background-color: blue;
+    transform: scale(1);
+    border-radius: 0;}
+
+    100% {background-color: green;}
+  }
+
+</style>
+
 <body>
 
   <div id="box1">
