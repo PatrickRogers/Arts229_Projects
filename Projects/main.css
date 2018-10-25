@@ -1,6 +1,6 @@
 body, html {
   background-color: white;
-  margin: 100px auto;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -84,6 +84,7 @@ body, html {
 
 .container {
   display: grid;
+  margin: 200px auto;
 }
 
 #logo {
@@ -210,4 +211,10 @@ h2 {
 
 .button:active a {
 	color: yellow;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    margin: 0px;
+  }
 }
