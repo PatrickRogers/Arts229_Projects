@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<title>Example</title>
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,600|Playfair+Display|Roboto" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="page_icon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="page_icon/favicon-16x16.png" sizes="16x16" />
+
+
+    <style>
+
+    :root {
+      --color: orange;
+    }
+
+    li {
+      color: var(--color);
+    }
+
+    hr {
+      color: var(--color);
+    }
+
+    #sigh {
+      width: 100px;
+      height: 100px;
+      background: green;
+      transition: transform .5s, background .5s;
+    }
+
+    #sigh:hover {
+      transform: rotate(180deg);
+      background: pink;
+      transition: transform 2s, background 2s;
+    }
+
+    #wooo {
+      width: 100px;
+      height: 100px;
+      background: red;
+    }
+
+    #wooo:hover {
+      transform: scale(1.3);
+      background: pink;
+      transition: transform 2s, background 2s;
+    }
+    </style>
+</head>
+
+<body>
+
+<section class="container">
+
+  <header>
+    <h1>Hello World! I'm Patrick</h1>
+    <h3>Arts229 Comp Graphics/ Adv Web Design</h3>
+  </header>
+
+  <section class="experiments">
+    <article id="experiments">
+      <div class="content">
+        <h2>Experiments</h2>
+          <ul>
+            <li><a href="#">Text Experiment</a></li>
+            <li><a href="#">Image Experiment</a></li>
+            <li><a href="#">Media Queries Experiment</a></li>
+            <li><a href="#">Flexbox Experiment</a></li>
+          </ul>
+      </div>
+    </article>
+
+    <article id="explorations">
+      <div class="content">
+        <h2>Explorations</h2>
+          <ul>
+            <li><a href="#">Exploration One</a></li>
+            <li><a href="#">Exploration Two</a></li>
+            <li><a href="#">assignment name</a></li>
+            <li><a href="#">assignment name</a></li>
+          </ul>
+      </div>
+    </article>
+
+    <article id="projects">
+      <div class="content">
+        <h2>Projects</h2>
+          <ul>
+            <li><a href="#">project name</a></li>
+            <li><a href="#">project name</a></li>
+            <li><a href="#">project name</a></li>
+            <li><a href="#">project name</a></li>
+          </ul>
+      </div>
+    </article>
+  </section>
+</section>
+
+
+<div id="sigh"><h1>sigh</h1></div>
+
+
+<div id="wooo"><h1>wooo</h1></div>
+
+</body>
+</html>

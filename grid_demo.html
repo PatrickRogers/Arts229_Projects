@@ -20,15 +20,20 @@
       font-family: sans-serif;
     }
 
+    h1 {
+      text-align: center;
+    }
+
     .wrapper {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 3fr 3fr 3fr;
+      grid-template-rows: 3fr 3fr 3fr;
       grid-column-gap: 5px;
       grid-row-gap: 5px;
       background-color: black;
       padding: 5px;
     }
+
 
     /* justify is horizontal
       align is vertical */
@@ -47,11 +52,26 @@
     }
 
     /* get elements to span multiple cells in the grid */
-    .double {
-      grid-column: span 1;
+
+    .head {
+      grid-column: span 4;
       grid-row: span 1;
     }
 
+    .article {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .side {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .footer {
+      grid-column: span 4;
+      grid-row: span
+    }
 
     /* responsive layout  changes based on screen size */
 
@@ -74,12 +94,12 @@
     <h1>css grid demo</h1>
   </header>
 
+
   <div class='wrapper'>
-    <h2 class='letter double'>1</h2>
-    <h2 class='letter'>2</h2>
-    <h2 class='letter'>3</h2>
-    <h2 class='letter'>4</h2>
-    <h2 class='letter'>5</h2>
+    <h2 class='letter head'>1</h2>
+    <h2 class='letter article'>2</h2>
+    <h2 class='letter side'>3</h2>
+    <h2 class='letter footer'>4</h2>
   </div>
 
 </body>
