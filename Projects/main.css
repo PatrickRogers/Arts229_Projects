@@ -96,12 +96,20 @@ img {
   display: block;
   margin: 0 auto;
   margin-bottom: -30px;
-  transform: rotate(360deg);
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% {
+  transform: rotate(360deg);}
 }
 
 h3 {
 text-align: center;
 font-family: Roboto;
+margin: 35px auto;
 }
 
 h1 {
