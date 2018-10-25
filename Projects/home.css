@@ -106,7 +106,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   font-size: 70px;
   color: white;
   line-height: 1;
@@ -125,11 +124,9 @@ nav {
   grid-row: span 1;
 }
 
-
-
 .grace {
   grid-column: 1/4;
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
@@ -160,6 +157,6 @@ grid-template-columns: 1fr 1fr 1fr;
 
 @media screen and (min-width: 800px) {
 .container {
-grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
   }
 }
