@@ -13,9 +13,17 @@
   fr = fractions
   */
 
-  body, html {
+    html {
+    background-image: url(Images/Street.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 0;
     margin: 0;
+  }
+
+  body {
+    margin-top: 200px;
   }
 
   header {
@@ -51,7 +59,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    background-color: black;
+    background-color: ;
     padding: 5px;
 
   }
@@ -61,15 +69,14 @@
     align is vertical */
 
   .item {
-    margin: 0;
-    background-color: pink;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    border: 3px solid white;
     font-family: sans-serif;
     font-size: 45px;
-    color: black;
     line-height: 1;
     font-weight: 600;
     transition: all .3s ease;
@@ -87,6 +94,7 @@
 
   .head h2 {
     font-size: 25px;
+    color: white;
   }
 
   .head h1 {
@@ -97,6 +105,7 @@
   ul {
   margin: 0, auto;
   font-size: 25px;
+  color: white;
   }
 
   .article {
@@ -106,7 +115,7 @@
 
   .article h2 {
     font-size: 25px;
-
+    color: white;
   }
 
   .side {
@@ -116,6 +125,7 @@
 
   .side h2 {
     font-size: 25px;
+    color: white;
   }
 
   .footer {
@@ -138,13 +148,9 @@
   }
 </style>
 </head>
-
 <body>
-  <header>
     <h1>Hello World! I'm Patrick</h1>
     <h3>Arts229 Comp Graphics/ Adv Web Design</h3>
-  </header>
-
 
   <div class='wrapper'>
     <div class="item head">
