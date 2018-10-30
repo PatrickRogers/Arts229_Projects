@@ -8,112 +8,190 @@
 <link rel="icon" type="image/png" href="page_icon/favicon-16x16.png" sizes="16x16" />
 
 <style>
-      body {
-        background-color: #6b8f67;
-        color: #111;
-        margin: 0 auto;
-      }
+  /*
+  Table of Content:
+  fr = fractions
+  */
 
-      .container {
-        margin: 0 auto;
-        max-width: 1425px;
-        min-width: 1425px;
-        position: relative;
-      }
+    html {
+    background-image: url(Images/Alley.jpg);
+    filter: blur(5.20209px)
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+  }
 
-      h1 {
-        color: #FFFFFF;
-        font-size: 72px;
-        font-family: "montserrat", sans-serif;
-        font-weight: 600;
-        width: 1000px;
-        line-height: 0.9;
-        margin-left: 225px;
-        padding-left: 50px;
-        padding-right: 50px;
-        text-shadow: 0px 0px 20px darkslategray;
-      }
+  body {
+    margin-top: 100px;
+  }
 
-      .content {
-        width: 600px;
-        height: 150px;
-        margin-top: 100px;
-        margin-left: 400px;
-        background-color: white;
-      }
+  header {
+    text-align: center;
+    font-size: 25px;
+  }
 
-      ul {
-        margin-left: 215px;
-        margin-top: 15px;
-        margin-bottom: 50px;
-      }
+  h1 {
+    color: #FFFFFF;
+    font-size: 72px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    width: 1000px;
+    line-height: 0.9;
+    margin-left: 225px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-shadow: 0px 0px 20px darkslategray;
+  }
 
-      h2 {
-        color: #6b8f67;
-        font-size: 36px;
-        font-family: "montserrat", sans-serif;
-        margin-bottom: 0px;
-        text-align: center;
-      }
+  h3 {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family: "montserrat", sans-serif;
+    margin-left: 280px;
+    margin-top: -40px;
+    text-shadow: 0px 0px 20px darkslategray;
+  }
 
-      h3 {
-        color: #FFFFFF;
-        font-size: 25px;
-        font-family: "montserrat", sans-serif;
-        margin-left: 280px;
-        margin-top: -40px;
-        text-shadow: 0px 0px 20px darkslategray;
-      }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 5px;
+    background-color: ;
+    padding: 0 25px;
+    margin-top: 25px;
+  }
+
+
+  /* justify is horizontal
+    align is vertical */
+
+  .item {
+    margin-top: 25px;
+    padding: 20px;
+    border: 5px solid white;
+    font-family: sans-serif;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: 600;
+    transition: all .3s ease;
+  }
+
+
+
+  /* get elements to span multiple cells in the grid */
+
+  .head {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+
+
+  .head h2 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+  }
+
+  .head h1 {
+    display: flex;
+    justify-content: stretch;
+  }
+
+  ul {
+  font-size: 25px;
+  color: white;
+  }
+
+  .article {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+
+  .article h2 {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+  }
+
+  .side {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+
+  .side h2 {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+  }
+
+  .footer {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+
+  /* responsive layout  changes based on screen size */
+
+  @media screen and (min-width: 500px) {
+  .wrapper {
+  grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+  .wrapper {
+  grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
 </style>
 </head>
-
 <body>
-
-<section class="container">
-
-  <header>
     <h1>Hello World! I'm Patrick</h1>
     <h3>Arts229 Comp Graphics/ Adv Web Design</h3>
-  </header>
 
-  <section class="experiments">
-    <article id="experiments">
-      <div class="content">
-        <h2>Experiments</h2>
-          <ul>
-            <li><a href="Text_Experiment/text_experiment.html">Text Experiment</a></li>
-            <li><a href="Image_Experiment/images.html">Image Experiment</a></li>
-            <li><a href="Media_Queries_Experiment/media_queries.html">Media Queries Experiment</a></li>
-            <li><a href="Flexbox_Experiment/flexbox.html">Flexbox Experiment</a></li>
-          </ul>
-      </div>
-    </article>
+  <div class='wrapper'>
+    <div class="item head">
 
-    <article id="explorations">
-      <div class="content">
-        <h2>Explorations</h2>
-          <ul>
-            <li><a href="Explorations/exploration_one.html">Exploration One</a></li>
-            <li><a href="Explorations/exploration_two.html">Exploration Two</a></li>
-            <li><a href="#">assignment name</a></li>
-            <li><a href="#">assignment name</a></li>
-          </ul>
-      </div>
-    </article>
+      <h2>Experiments</h2>
+        <ul>
+          <li><a href="Text_Experiment/text_experiment.html">Text Experiment</a></li>
+          <li><a href="Image_Experiment/images.html">Image Experiment</a></li>
+          <li><a href="Media_Queries_Experiment/media_queries.html">Media Queries Experiment</a></li>
+          <li><a href="Flexbox_Experiment/flexbox.html">Flexbox Experiment</a></li>
+        </ul>
 
-    <article id="projects">
-      <div class="content">
-        <h2>Projects</h2>
-          <ul>
-            <li><a href="Projects/project_one_main.html">Project One</a></li>
-            <li><a href="#">project name</a></li>
-            <li><a href="#">project name</a></li>
-            <li><a href="#">project name</a></li>
-          </ul>
-      </div>
-    </article>
-  </section>
-</section>
+    </div>
+
+
+    <div class="item article">
+
+      <h2>Explorations</h2>
+        <ul>
+          <li><a href="Explorations/exploration_one.html">Exploration One</a></li>
+          <li><a href="Explorations/exploration_two.html">Exploration Two</a></li>
+          <li><a href="#">assignment name</a></li>
+          <li><a href="#">assignment name</a></li>
+        </ul>
+
+    </div>
+
+
+    <div class="item side">
+
+      <h2>Projects</h2>
+        <ul>
+          <li><a href="Projects/project_one_main.html">Project One</a></li>
+          <li><a href="#">project name</a></li>
+          <li><a href="#">project name</a></li>
+          <li><a href="#">project name</a></li>
+        </ul>
+
+    </div>
+
+  </div>
 
 </body>
 </html>

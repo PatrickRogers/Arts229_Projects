@@ -12,12 +12,8 @@
     fr = fractions
     */
 
-    body,
-    html,
-    .letter {
-      padding: 0;
-      margin: 0;
-      font-family: sans-serif;
+    body {
+
     }
 
     h1 {
@@ -26,8 +22,8 @@
 
     .wrapper {
       display: grid;
-      grid-template-columns: 3fr 3fr 3fr;
-      grid-template-rows: 3fr 3fr 3fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-column-gap: 5px;
       grid-row-gap: 5px;
       background-color: black;
@@ -39,11 +35,12 @@
       align is vertical */
 
     .letter {
+      margin: 0;
       background-color: #b37b00;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
+      font-family: sans-serif;
       font-size: 70px;
       color: white;
       line-height: 1;
@@ -54,36 +51,40 @@
     /* get elements to span multiple cells in the grid */
 
     .head {
-      grid-column: span 4;
+      grid-column: span 2;
       grid-row: span 1;
     }
 
+    .team {
+      width: 100%;
+    }
+
     .article {
-      grid-column: span 2;
+      grid-column: span 1;
       grid-row: span 2;
     }
 
     .side {
-      grid-column: span 2;
-      grid-row: span 2;
+      grid-column: span 1;
+      grid-row: span 1;
     }
 
     .footer {
-      grid-column: span 4;
-      grid-row: span
+      grid-column: span 2;
+      grid-row: span 1;
     }
 
     /* responsive layout  changes based on screen size */
 
     @media screen and (min-width: 500px) {
     .wrapper {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
       }
     }
 
     @media screen and (min-width: 800px) {
     .wrapper {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
       }
     }
   </style>
@@ -96,10 +97,12 @@
 
 
   <div class='wrapper'>
-    <h2 class='letter head'>1</h2>
-    <h2 class='letter article'>2</h2>
-    <h2 class='letter side'>3</h2>
-    <h2 class='letter footer'>4</h2>
+    <div class='letter head'>
+      <img class="team" src="Projects/images/JiuJitsu.jpg" alt="image">
+    </div>
+    <div class='letter article'>2</div>
+    <div class='letter side'>3</div>
+    <div class='letter footer'>4</div>
   </div>
 
 </body>
