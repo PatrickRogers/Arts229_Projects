@@ -114,7 +114,7 @@ body, html {
   transform: rotate(360deg);}
 }
 
-h3 {
+.one h3 {
 text-align: center;
 font-family: Roboto;
 }
@@ -126,7 +126,7 @@ font-family: Roboto;
   margin-top: -5px;
 }
 
-h1 span{
+.one h1 span{
   font-size: 97px;
 }
 
@@ -225,32 +225,6 @@ button:active a {
 
 /*scroll button*/
 
-section {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-section::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 80%;
-}
-section h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  color: black;
-  font : normal 300 64px/1 'Josefin Sans', sans-serif;
-  text-align: center;
-  white-space: nowrap;
-}
-
 .scroll a {
   margin-top: 70px;
   position: absolute;
@@ -300,32 +274,27 @@ section h1 {
 }
 
 .two {
-  margin: 20px 0 0;
-  background: ;
+
 }
 
-.two h1 {
+.two header {
+  font-size: 75px;
+  font-weight: bold;
   text-align: right;
-  font-size: 85px;
-  transform: rotate(-90deg);
-  position: relative;
-  top: 190px;
-  left: 610px;
+  margin-right: 160px;
 }
 
 .two p {
   text-align: right;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: lighter;
   line-height: 2;
   letter-spacing: .1rem;
-  padding-right: 70px;
+  padding: 0 160px;
 }
 
 .armbar {
-  width: 85%;
-  margin-top: 25px;
-  border:
+
 }
 
 .three {
@@ -334,11 +303,33 @@ section h1 {
 
 .three h1 {
   font-size: 85px;
-  margin-left: 20px;
+  text-align: center;
 }
 
-@media screen and (max-width: 1440px) {
+.three h3 {
+  font-size: 12px;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  margin-top: -50px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1450px) {
   .container {
     margin: 0px;
+    margin-top: 300px;
+  }
+
+  .two h1 {
+    margin-right: 150px;
+  }
+
+  .two p {
+    font-size: 35px;
+    padding: 0 285px 0 0;
+  }
+
+  .armbar {
+    width: 90%;
   }
 }
