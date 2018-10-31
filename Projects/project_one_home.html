@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Home</title>
 
 <link href="home.css" rel="stylesheet" type="text/css">
 </head>
@@ -23,31 +23,54 @@
     </a>
   </nav>
 
+  <div class='wrapper'>
+    <div class="item head">
 
-  <div class="container">
 
-    <div class="item header">
+      <div class="w3-content w3-section">
+        <img class="mySlides" src="images/Alyse.jpg" style="width:100%">
+        <img class="mySlides" src="images/Kyle.jpg" style="width:100%">
+        <img class="mySlides" src="images/Darce.jpg" style="width:100%">
+      </div>
 
-      <h1>BEGIN THE JOUNEY</h1>
 
-    </div>
-
-    <div class="item article">
-      YEARLY
-      <br>$198</br>
     </div>
 
     <div class="item side">
-      MONTHLY
-      <br>$19</br>
-    </div>
-
-    <div class="item footer">
-      LIFETIME
-      $349
+      <h2>ADULT FREE TRIAL</h2>
+      <h1>Congradulations!</h1>
+      <p>
+        You’ve taken the first step, and we are committed to helping you with the rest of the journey to accomplish your fitness goals.
+        You’ll also get introduced to a life-changing sport and have an opportunity to learn from one of the most decorated athletes in the history of our sport.
+        And fun, you’ll have lots of fun!
+      </p>
+        <br>
+      <p id="important">
+        *Must be an LA resident, new to jiu jitsu, and 1st trial class must be scheduled in advance (begin process by clicking below)
+      </p>
+      <button class="mask">
+        <a href="project_one_home.html">CLAIM&nbsp;FREE TRIAL&nbsp;<span class="shift">›</span></a>
+        <div class="mask"></div>
+      </button>
     </div>
   </div>
 
+  <script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
 
 </body>
 </html>
