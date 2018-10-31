@@ -4,11 +4,9 @@ body, html {
 }
 
 .wrapper {
-  margin: 0;
-  height: 50px;
+  height: 85px;
   background-color: white;
   position: sticky;
-  top: 0;
   z-index: 5000;
 }
 
@@ -17,7 +15,8 @@ body, html {
   width: 40px;
   height: 40px;
   position: relative;
-  top: 5px;
+  top: 25px;
+  left: 25px;
   overflow: hidden;
 }
 .close-button > div {
@@ -90,7 +89,7 @@ body, html {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-row-gap: 200px;
+  grid-row-gap: 400px;
 }
 
 .one {
@@ -223,9 +222,9 @@ button:active a {
 
 /*scroll button*/
 .scroll a {
-  margin-top: 70px;
+  margin-top: 60px;
   position: absolute;
-  left: 48%;
+  left: 47.5%;
   z-index: 2;
   display: flex;
   -webkit-transform: translate(0, -50%);
@@ -277,21 +276,21 @@ button:active a {
 .two header {
   font-size: 75px;
   font-weight: bold;
-  text-align: right;
-  margin-right: 160px;
+  text-align: left;
+  margin-left: 3.5%;
 }
 
 .two p {
   text-align: right;
   font-size: 25px;
-  font-weight: lighter;
+  font-weight: bolder;
   line-height: 2;
-  letter-spacing: .1rem;
-  padding: 0 160px;
+  padding: 0 3.5%;
 }
 
 .armbar {
-
+width: 93%;
+margin: 0% 3.5%;
 }
 
 .three {
@@ -323,10 +322,7 @@ figure.snip0016 {
   position: relative;
   overflow: hidden;
   margin: 10px;
-  min-width: 220px;
-  max-width: 310px;
-  max-height: 220px;
-  width: 100%;
+  width: 30%;
   background: #000000;
   text-align: left;
 }
