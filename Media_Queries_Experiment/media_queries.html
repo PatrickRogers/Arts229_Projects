@@ -15,7 +15,7 @@
 
   body {
     font-family: sans-serif;
-    background: #ccc;
+    background: yellow;
     width: 80vw;
     margin: 5% auto;
     font-size: 16px;
@@ -140,12 +140,16 @@
     clear: both;
   }
 
+  @media screen and (min-width: 326px) {
+    body {
+      background: green;
+    }
+  }
+
   @media screen and (min-width: 600px) {
     body {
       background: lightblue;
       color: white;
-      min-width: 600px;
-      max-width: 1200px;
     }
 
     h1 {
