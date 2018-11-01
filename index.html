@@ -13,16 +13,17 @@
   fr = fractions
   */
 
-    html {
+  html {
+
+  }
+
+  body {
     background-image: url(Images/Alley.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
     margin: 0;
-  }
-
-  body {
     margin-top: 100px;
   }
 
@@ -143,6 +144,12 @@
   @media screen and (min-width: 800px) {
   .wrapper {
   grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media screen and (min-width: 1450px) {
+    .wrapper {
+      margin-top: 50%;
     }
   }
 </style>

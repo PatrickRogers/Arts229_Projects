@@ -445,6 +445,10 @@ figure.snip0016:hover figcaption::before {
     grid-row-gap: 450px;
   }
 
+	.two {
+		margin-top: -50px;
+	}
+
   .two header {
     margin-right: 190px;
     font-size: 90px;
