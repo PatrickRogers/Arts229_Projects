@@ -216,9 +216,12 @@ grid-template-columns: 1fr 1fr;
 grid-template-columns: 1fr 1fr;
   }
 }
-<<<<<<< HEAD
 
 @media screen and (min-width: 1450px) {
+  .wrapper {
+  grid-template-columns: 1fr 1fr;
+    }
+
   .side {
     margin-top: 16.5%;
   }
