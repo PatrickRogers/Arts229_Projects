@@ -81,8 +81,7 @@ body {
 }
 
 nav {
-	margin: 0;
-	height: 50px;
+	margin-top: 20px;
 	background-color: white;
 	position: sticky;
 	top: 0;
@@ -437,11 +436,15 @@ figure.snip0016:hover figcaption::before {
   transition-delay: 0s;
 }
 
-
+@media screen and (max-width: 600px) {
+	.container {
+		margin-top: 400px;
+	}
+}
 
 @media screen and (min-width: 1450px) {
   .container {
-    margin-top: 100px;
+    margin-top: 200px;
     grid-row-gap: 450px;
   }
 
