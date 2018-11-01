@@ -469,8 +469,8 @@ figure.snip0016:hover figcaption::before {
 
 @media screen and (min-width: 1450px) {
   .container {
-    margin-top: 200px;
-    grid-row-gap: 350px;
+    margin-top: 100px;
+    grid-row-gap: 450px;
   }
 
   .two header {
