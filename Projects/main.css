@@ -91,7 +91,7 @@ nav {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-row-gap: 300px;
 }
 
@@ -294,14 +294,14 @@ button:active a {
 
 .armbar {
 width: 93%;
-margin: 0% 3.5%;
+margin: 0 3.5%;
 }
 
 .three {
-  background: ;
+
 }
 
-.three h1 {
+.three h1  {
   font-size: 85px;
   text-align: center;
 }
@@ -434,6 +434,12 @@ figure.snip0016:hover figcaption::before {
   opacity: 1;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+}
+
+.four {
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: -5px;
 }
 
 @media screen and (max-width: 600px) {
