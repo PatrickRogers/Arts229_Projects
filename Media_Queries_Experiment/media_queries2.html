@@ -1,124 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- saved from url=(0070)https://chad-bennett.github.io/arts229/mediaQueries/mediaTemplate.html -->
+<html class="gr__chad-bennett_github_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Media Queries Template</title>
 
-<head>
-  <meta charset="utf-8">
-  <title>css grid demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="an experiment in creating different layouts and themes for different screen sizes">
+  <meta name="keywords" content="media query, layout, assignment">
+  <meta name="author" content="your name here">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this viewport setting is important for responsive web design -->
 
   <style>
-    /*
-    Table of Content:
-    fr = fractions
-    */
 
+  body {
+  background: orange;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  ul li {
+    list-style: none;
+    display: inline-block;
+
+  }
+
+  ul li a {
+    text-decoration: none;
+    font-size: 21px;
+    font-family: arial;
+    color: pink;
+    padding: 0 10px;
+  }
+
+  figure {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    float: right;
+  }
+
+  @media screen and (min-width: 348px) {
     body {
-
-    }
-
-    h1 {
+      background-color: pink;
+      margin: 12%;
       text-align: center;
-      font-size: 75px;
     }
 
-    .wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-column-gap: 5px;
-      grid-row-gap: 5px;
-      background-color: black;
-      padding: 5px;
+    header {
+      font-size: 21px;
     }
 
-    /* justify is horizontal
-      align is vertical */
-
-    .letter {
-      background-color: #b37b00;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: sans-serif;
-      font-size: 70px;
+    ul li a {
+      font-size: 18px;
       color: white;
-      line-height: 1;
-      font-weight: 600;
-      transition: all .3s ease;
+      padding: 0 5px;
     }
 
-    /* get elements to span multiple cells in the grid */
-
-    .head {
-      grid-column: span 2;
-      grid-row: span 1;
+    article {
+      margin: -10% 0 0;
     }
 
-    figure.photo1 {
-      background: black;
-      width: 100%;
-      display: flex;
-      justify-content: center;
+    figure {
+      background-color: lightblue;
+      text-align: left;
+      float: none;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: 774px) {
+    body {
+      background-color: white;
+      margin: 10%;
+      text-align: left;
     }
 
-    .article {
-      grid-column: span 1;
-      grid-row: span 2;
-    }
-
-    .article h1 {
+    header {
       font-size: 45px;
     }
 
-    .side {
-      grid-column: span 1;
-      grid-row: span 1;
+    ul li a {
+      font-size: 25px;
+      color: black;
     }
 
-    .footer {
-      grid-column: span 2;
-      grid-row: span 1;
+    figure {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      float: right;
     }
+  }
 
-    /* responsive layout  changes based on screen size */
-
-    @media screen and (min-width: 500px) {
-    .wrapper {
-    grid-template-columns: 1fr 1fr;
-    background: pink;
-      }
-    }
-
-    @media screen and (min-width: 800px) {
-    .wrapper {
-    grid-template-columns: 1fr 1fr;
-    background: lightblue;
-      }
-    }
   </style>
+
 </head>
 
-<body>
+<body data-gr-c-s-loaded="true">
   <header>
-    <h1>Media Queries Experiment</h1>
+    <h1>This is the page heading</h1>
   </header>
 
-  <div class='wrapper'>
+  <nav>
+    <ul>
+      <li><a href="https://chad-bennett.github.io/arts229/mediaQueries/mediaTemplate.html#">Home</a></li>
+      <li><a href="https://chad-bennett.github.io/arts229/mediaQueries/mediaTemplate.html#">About Us</a></li>
+      <li><a href="https://chad-bennett.github.io/arts229/mediaQueries/mediaTemplate.html#">Contact Us</a></li>
+    </ul>
+  </nav>
 
-    <div class='letter head'>
-      <figure class="photo1">
-        1
-      </figure>
-    </div>
+  <article>
+    <h1>This is the article heading</h1>
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those <a href="https://chad-bennett.github.io/home/post/lorem-ipsum/" target="_blank">lorem-ipsum generators</a> or you could write your own content. The choice is up to you as the designer. </p>
+  </article>
 
-    <div class='letter article'>
-      <h1>Heading</h1>
-    </div>
+  <aside>
+    <figure>
+      <img src="./media_draft_files/something.png" alt="image alt text goes here" title="image" height="100px" width="100px">
+      <figcaption>Figure caption goes here</figcaption>
+    </figure>
 
-    <div class='letter side'>3</div>
-    <div class='letter footer'>4</div>
-  </div>
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+  </aside>
 
-</body>
+  <section>
+    <h1>This is the section heading</h1>
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
 
-</html>
+    <blockquote>
+      This is a blockquote in the middle of the section. You can style this however you want. You can probably also come up with better text than this boring explanation.
+    </blockquote>
+
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+
+  </section>
+
+  <footer>
+    <hr>
+    © Your Name Enterprises
+  </footer>
+
+
+
+
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>

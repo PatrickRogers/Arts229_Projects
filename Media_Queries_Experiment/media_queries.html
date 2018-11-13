@@ -16,6 +16,8 @@
 
   header {
     text-align: center;
+    color: white;
+    background-color: black;
   }
 
   nav {
@@ -42,9 +44,13 @@
     padding: 0 10px;
   }
 
+  p {
+    font-size: 18px;
+  }
+
   figure {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     background-color: blue;
     float: right;
   }
@@ -52,22 +58,30 @@
   @media screen and (min-width: 348px) {
     body {
       background-color: pink;
-      margin: 12%;
+      margin: 0;
       text-align: center;
     }
 
     header {
       font-size: 21px;
+      padding: 1%;
     }
 
     ul li a {
-      font-size: 18px;
+      font-size: 12px;
       color: white;
-      padding: 0 5px;
+    }
+
+    .wrapper {
+      margin: 5%;
+    }
+
+    .wrapper h1 {
+      font-size: 21px;
     }
 
     article {
-      margin: -10% 0 0;
+
     }
 
     figure {
@@ -81,22 +95,33 @@
   @media screen and (min-width: 774px) {
     body {
       background-color: white;
-      margin: 10%;
+      margin: 0;
       text-align: left;
     }
 
     header {
       font-size: 45px;
+      padding: 2%;
     }
 
     ul li a {
-      font-size: 25px;
-      color: black;
+      font-size: 18px;
+      color: white;
+    }
+
+    .wrapper {
+      margin: 5%;
+    }
+
+    .wrapper h1 {
+      font-size: 24px;
+    }
+
+    article {
+
     }
 
     figure {
-      width: 100px;
-      height: 100px;
       background-color: pink;
       float: right;
     }
@@ -109,7 +134,7 @@
 <body data-gr-c-s-loaded="true">
   <header>
     <h1>This is the page heading</h1>
-  </header>
+
 
   <nav>
     <ul>
@@ -118,7 +143,8 @@
       <li><a href="https://chad-bennett.github.io/arts229/mediaQueries/mediaTemplate.html#">Contact Us</a></li>
     </ul>
   </nav>
-
+</header>
+<div class="wrapper">
   <article>
     <h1>This is the article heading</h1>
     <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those <a href="https://chad-bennett.github.io/home/post/lorem-ipsum/" target="_blank">lorem-ipsum generators</a> or you could write your own content. The choice is up to you as the designer. </p>
@@ -151,6 +177,7 @@
     <hr>
     © Your Name Enterprises
   </footer>
+</div>
 
 
 
