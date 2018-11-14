@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <!-- saved from url=(0070)https://chad-bennett.github.io/arts229/mediaQueries/mediaTemplate.html -->
-<html class="gr__chad-bennett_github_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Media Queries Template</title>
+<html>
+<title>Media Queries Template</title>
 
-  <meta name="description" content="an experiment in creating different layouts and themes for different screen sizes">
-  <meta name="keywords" content="media query, layout, assignment">
-  <meta name="author" content="your name here">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this viewport setting is important for responsive web design -->
+<meta name="description" content="an experiment in creating different layouts and themes for different screen sizes">
+<meta name="keywords" content="media query, layout, assignment">
+<meta name="author" content="your name here">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this viewport setting is important for responsive web design -->
 
   <style>
 
-  body {
-  background: orange;
+  html, body {
+  margin: 0;
+  text-align: center;
   }
 
   header {
     text-align: center;
     color: white;
     background-color: black;
+    padding: 2%;
+  }
+
+  h1 {
+    font-size: 21px;
+    margin: 0;
   }
 
   nav {
     width: 100%;
-    height: 100px;
-    text-align: center;
   }
 
   ul {
@@ -38,37 +43,54 @@
 
   ul li a {
     text-decoration: none;
-    font-size: 21px;
+    font-size: 10px;
     font-family: arial;
-    color: pink;
+    color: white;
     padding: 0 10px;
   }
 
-  p {
+  .wrapper {
+    margin: 5%;
+  }
+
+  .wrapper h1 {
     font-size: 18px;
   }
 
+  p {
+    font-size: 14px;
+  }
+
+  blockquote {
+    font-size: 16px;
+    background-color: lightblue;
+  }
+
   figure {
-    width: 300px;
-    height: 300px;
-    background-color: blue;
-    float: right;
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    margin: 0 auto;
+    float: none;
   }
 
   @media screen and (min-width: 348px) {
     body {
-      background-color: pink;
+      background-color: white;
       margin: 0;
       text-align: center;
     }
 
     header {
-      font-size: 21px;
-      padding: 1%;
+
+    }
+
+    h1 {
+      font-size: 38px;
     }
 
     ul li a {
-      font-size: 12px;
+      font-size: 14px;
       color: white;
     }
 
@@ -77,19 +99,39 @@
     }
 
     .wrapper h1 {
-      font-size: 21px;
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    blockquote {
+      font-size: 18px;
+      background-color: lightblue;
     }
 
     article {
 
     }
 
+    .aside {
+
+    }
+
     figure {
-      background-color: lightblue;
-      text-align: left;
+      width: 300px;
+      height: 300px;
+      background-color: pink;
+      text-align: center;
       float: none;
       margin: 0 auto;
     }
+
+    img {
+      padding-top: 40%;
+    }
+
   }
 
   @media screen and (min-width: 774px) {
@@ -100,8 +142,11 @@
     }
 
     header {
-      font-size: 45px;
-      padding: 2%;
+
+    }
+
+    h1 {
+      font-size: 60px;
     }
 
     ul li a {
@@ -114,16 +159,37 @@
     }
 
     .wrapper h1 {
-      font-size: 24px;
+      font-size: 38px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    blockquote {
+      background-color: lightblue;
+      margin: 1%;
+      padding: 1%;
+      width: 55%;
+      font-size: 18px;
     }
 
     article {
 
     }
 
+    aside {
+      margin: 1%;
+    }
+
     figure {
       background-color: pink;
       float: right;
+      text-align: center;
+    }
+
+    img {
+      padding-top: 40%;
     }
   }
 
@@ -133,8 +199,7 @@
 
 <body data-gr-c-s-loaded="true">
   <header>
-    <h1>This is the page heading</h1>
-
+  <h1>This is the Page Heading</h1>
 
   <nav>
     <ul>
@@ -143,7 +208,8 @@
       <li><a href="https://chad-bennett.github.io/arts229/mediaQueries/mediaTemplate.html#">Contact Us</a></li>
     </ul>
   </nav>
-</header>
+  </header>
+
 <div class="wrapper">
   <article>
     <h1>This is the article heading</h1>
@@ -164,7 +230,7 @@
     <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
 
     <blockquote>
-      This is a blockquote in the middle of the section. You can style this however you want. You can probably also come up with better text than this boring explanation.
+      "This is a blockquote in the middle of the section. You can style this however you want. You can probably also come up with better text than this boring explanation."
     </blockquote>
 
     <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
