@@ -1,0 +1,30 @@
+body {
+  margin: 0 4em;
+  padding: 1em 0;
+}
+
+header,
+main,
+aside,
+footer {
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+header,
+footer {
+  grid-column: 1 / span 2;
+}
+
+header {
+  background: lightblue;
+}
