@@ -2,8 +2,14 @@ body {
  margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #close {
-  width: 40px;
+  width: 100%;
+  background-color: #f6f6f6;
 }
 
 #close a {
@@ -103,6 +109,9 @@ footer {
 /* Header */
 #header {
   background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #header .logo {
@@ -114,52 +123,22 @@ footer {
   text-align: center;
 }
 
-.logo img {
-  width: 70%;
-  margin-left: 13.5%;
-  z-index: 1;
-  position: absolute;
-}
-
-/*
-#header .logo > * {
-  display: inline-block;
-  vertical-align: middle;
-}
-*/
-
 /* Gradient */
 .square {
   cursor: pointer;
   border: solid 0px transparent;
-  padding: 120px;
-  width: 35.8%;
-  height: 73%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
   position: absolute;
-  top: 54.2%;
-  left: 49.15%;
+
   background: linear-gradient(230deg, orange, pink, yellow);
   background-clip: content-box;
   background-size: 400% 400%;
   border-color: currentColor;
-  -webkit-animation: partytime 7s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
-          animation: partytime 7s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
+  animation: partytime 7s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
   transition: padding 1s cubic-bezier(0.215, 0.61, 0.355, 1);
   will-change: transform;
 }
-@-webkit-keyframes partytime {
-  0% {
-    background-position: 83% 0%;
-  }
-  50% {
-    background-position: 18% 100%;
-  }
-  100% {
-    background-position: 83% 0%;
-  }
-}
+
 @keyframes partytime {
   0% {
     background-position: 83% 0%;
@@ -171,6 +150,14 @@ footer {
     background-position: 83% 0%;
   }
 }
+
+/*
+#header .logo > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+*/
+
 
 /* Nav */
 #header nav {
@@ -218,9 +205,6 @@ footer {
 }
 
 #header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
-  -moz-transition: opacity 0.2s ease;
-  -webkit-transition: opacity 0.2s ease;
-  -ms-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
   content: '';
   display: block;
