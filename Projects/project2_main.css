@@ -125,6 +125,10 @@ footer {
   text-align: center;
 }
 
+.logo img {
+  border-radius: 10px;
+}
+
 .inner {
   margin: 0;
 }
@@ -141,6 +145,7 @@ footer {
   animation: partytime 7s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
   transition: padding 1s cubic-bezier(0.215, 0.61, 0.355, 1);
   will-change: transform;
+  border-radius: 10px;
 }
 
 @keyframes partytime {
@@ -506,6 +511,7 @@ body.is-menu-visible #menu .close {
 @media screen and (max-width: 1800px) {
   #main {
     margin-top: 10%;
+    padding: 
   }
 
   .titles h1 {
@@ -538,6 +544,7 @@ body.is-menu-visible #menu .close {
   border: 3px solid #f6f6f6;
   padding: 10px;
   text-align: center;
+  border-radius: 10px;
 }
 
 .carre_couleur {
