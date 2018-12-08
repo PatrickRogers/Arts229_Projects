@@ -490,6 +490,7 @@ body.is-menu-visible #menu .close {
 
 .titles article span img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .titles h1 {
@@ -550,15 +551,6 @@ body.is-menu-visible #menu .close {
 
 .base_hov .retract
 {
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform-origin: 50% 20%;
-  -webkit-transform: scale(1);
-  -moz-transition: all 200ms ease-in;
-  -moz-transform-origin: 50% 20%;
-  -moz-transform: scale(1);
-  -ms-transition: all 200ms ease-in;
-  -ms-transform-origin: 50% 20%;
-  -ms-transform: scale(1);
   transition: all 200ms ease-in;
   transform-origin: 50% 20%;
   transform: scale(1);
@@ -570,12 +562,6 @@ body.is-menu-visible #menu .close {
 }
 .base_hov:hover .retract
 {
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(0.6);
-  -moz-transition: all 200ms ease-in;
-  -moz-transform: scale(0.6);
-  -ms-transition: all 200ms ease-in;
-  -ms-transform: scale(0.6);
   transition: all 200ms ease-in;
   transform: scale(0.6);
 }
