@@ -482,6 +482,13 @@ body.is-menu-visible #menu .close {
   margin-top: 5%;
 }
 
+#main h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 45px;
+
+}
+
 #main .titles .image {
   height: 10%;
 }
