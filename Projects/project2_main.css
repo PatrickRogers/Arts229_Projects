@@ -470,6 +470,10 @@ body.is-menu-visible #menu .close {
   margin: 0 10%;
 }
 
+.rotate {
+  transform: rotateY(180deg);
+}
+
 /* images */
 .titles {
   display: flex;
@@ -717,6 +721,7 @@ body.is-menu-visible #menu .close {
   position: relative;
   top: 200px;
   font-size: 45px;
+  color: black;
 }
 
 /* justify is horizontal
