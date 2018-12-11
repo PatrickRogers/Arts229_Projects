@@ -636,6 +636,7 @@ body.is-menu-visible #menu .close {
 .container img {
   width: 290px;
   margin-top: 30px;
+  margin-left: 18px;
 }
 
 .slideshow-buttons {
@@ -702,6 +703,7 @@ body.is-menu-visible #menu .close {
   grid-gap: 4px;
   margin-left: 20px;
   margin-top: 5px;
+  justify-content: space-between;
 }
 .sizes:hover {
   cursor: pointer;
@@ -714,7 +716,7 @@ body.is-menu-visible #menu .close {
 }
 
 .size {
-  padding: 9px;
+  padding: 5px 0;
   border: 1px solid #E0C9CB;
   font-size: 0.7em;
   text-align: center;
