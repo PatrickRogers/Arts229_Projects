@@ -490,7 +490,6 @@ body.is-menu-visible #menu .close {
   margin: 0;
   text-align: center;
   font-size: 45px;
-
 }
 
 #main .titles .image {
@@ -550,6 +549,7 @@ body.is-menu-visible #menu .close {
 /* Divider */
 .divider {
   display: block;
+  top: 5%;
   margin: auto;
   width: 50%;
   border: 3px solid #f6f6f6;
@@ -1423,17 +1423,8 @@ input[type="radio"] + label:before {
 	}
 
 		#footer > .inner {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
 			display: flex;
-			-moz-flex-wrap: wrap;
-			-webkit-flex-wrap: wrap;
-			-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
-			-moz-flex-direction: row;
-			-webkit-flex-direction: row;
-			-ms-flex-direction: row;
 			flex-direction: row;
 		}
 
