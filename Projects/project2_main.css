@@ -715,6 +715,15 @@ body.is-menu-visible #menu .close {
   color: #F5F5F5;
 }
 
+/* Contact */
+.location {
+  padding: 5%;
+}
+
+.whoops {
+  padding: 10%;
+}
+
 /* Order */
 .wrapper.head header {
   text-align: center;
