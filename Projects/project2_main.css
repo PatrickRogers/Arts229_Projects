@@ -112,8 +112,6 @@ footer {
   background: #f6f6f6;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0;
 }
 
 #header .logo {
@@ -169,7 +167,6 @@ footer {
 
 /* Navbar */
 #header nav.bar {
-  width: 100%;
   text-align: center;
 }
 
@@ -187,8 +184,8 @@ footer {
 
 #header nav.bar ul li a {
   text-decoration: none;
-  font-size: 10px;
-  font-family: arial;
+  font-size: 20px;
+  font-family: ;
   color: black;
 }
 
@@ -481,6 +478,13 @@ body.is-menu-visible #menu .close {
 #main {
   margin-top: 5%;
 }
+#main p {
+  padding: 0 15%;
+  margin-top: 5%;
+  font-size: 18px;
+  font-family: Roboto;
+  line-height: 2;
+}
 
 #main h1 {
   margin: 0;
@@ -517,7 +521,7 @@ body.is-menu-visible #menu .close {
 
 @media screen and (max-width: 1800px) {
   #main {
-    margin-top: 10%;
+    margin-top: %;
     padding:
   }
 
