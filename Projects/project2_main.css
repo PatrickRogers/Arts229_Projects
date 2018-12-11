@@ -45,24 +45,20 @@ a {
 	display: block;
 	width: 4px;
 	height: 25px;
-	-webkit-transform-origin: bottom center;
-					transform-origin: bottom center;
+  transform-origin: bottom center;
 	background: black;
 	transition: all ease-out 280ms;
 }
 .close-button-block:last-of-type {
-	-webkit-transform: rotate(180deg);
-					transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 .close-button .in .close-button-block:before {
 	transition-delay: 280ms;
-	-webkit-transform: translateX(20px) translateY(-20px) rotate(45deg);
-					transform: translateX(20px) translateY(-20px) rotate(45deg);
+	transform: translateX(20px) translateY(-20px) rotate(45deg);
 }
 .close-button .in .close-button-block:after {
 	transition-delay: 280ms;
-	-webkit-transform: translateX(-22px) translateY(-22px) rotate(-45deg);
-					transform: translateX(-22px) translateY(-22px) rotate(-45deg);
+	transform: translateX(-22px) translateY(-22px) rotate(-45deg);
 }
 .close-button .out {
 	position: absolute;
@@ -70,28 +66,22 @@ a {
 	left: 0;
 }
 .close-button .out .close-button-block:before {
-	-webkit-transform: translateX(-5px) translateY(5px) rotate(45deg);
-					transform: translateX(-5px) translateY(5px) rotate(45deg);
+  transform: translateX(-5px) translateY(5px) rotate(45deg);
 }
 .close-button .out .close-button-block:after {
-	-webkit-transform: translateX(5px) translateY(5px) rotate(-45deg);
-					transform: translateX(5px) translateY(5px) rotate(-45deg);
+	transform: translateX(5px) translateY(5px) rotate(-45deg);
 }
 .close-button:hover .in .close-button-block:before {
-	-webkit-transform: translateX(-5px) translateY(5px) rotate(45deg);
-					transform: translateX(-5px) translateY(5px) rotate(45deg);
+  transform: translateX(-5px) translateY(5px) rotate(45deg);
 }
 .close-button:hover .in .close-button-block:after {
-	-webkit-transform: translateX(5px) translateY(5px) rotate(-45deg);
-					transform: translateX(5px) translateY(5px) rotate(-45deg);
+	transform: translateX(5px) translateY(5px) rotate(-45deg);
 }
 .close-button:hover .out .close-button-block:before {
-	-webkit-transform: translateX(-20px) translateY(20px) rotate(45deg);
-					transform: translateX(-20px) translateY(20px) rotate(45deg);
+	transform: translateX(-20px) translateY(20px) rotate(45deg);
 }
 .close-button:hover .out .close-button-block:after {
-	-webkit-transform: translateX(20px) translateY(20px) rotate(-45deg);
-					transform: translateX(20px) translateY(20px) rotate(-45deg);
+  transform: translateX(20px) translateY(20px) rotate(-45deg);
 }
 
 .grid {
@@ -300,13 +290,7 @@ footer {
 }
 
 #menu {
-  -moz-transform: translateX(22em);
-  -webkit-transform: translateX(22em);
-  -ms-transform: translateX(22em);
   transform: translateX(22em);
-  -moz-transition: -moz-transform 0.45s ease, visibility 0.45s;
-  -webkit-transition: -webkit-transform 0.45s ease, visibility 0.45s;
-  -ms-transition: -ms-transform 0.45s ease, visibility 0.45s;
   transition: transform 0.45s ease, visibility 0.45s;
   position: fixed;
   top: 0;
@@ -323,9 +307,6 @@ footer {
 }
 
 #menu > .inner {
-  -moz-transition: opacity 0.45s ease;
-  -webkit-transition: opacity 0.45s ease;
-  -ms-transition: opacity 0.45s ease;
   transition: opacity 0.45s ease;
   -webkit-overflow-scrolling: touch;
   position: absolute;
@@ -363,34 +344,25 @@ footer {
 }
 
 #menu > .close {
--moz-transition: opacity 0.45s ease, -moz-transform 0.45s ease;
--webkit-transition: opacity 0.45s ease, -webkit-transform 0.45s ease;
--ms-transition: opacity 0.45s ease, -ms-transform 0.45s ease;
-transition: opacity 0.45s ease, transform 0.45s ease;
--moz-transform: scale(0.25) rotate(180deg);
--webkit-transform: scale(0.25) rotate(180deg);
--ms-transform: scale(0.25) rotate(180deg);
-transform: scale(0.25) rotate(180deg);
--webkit-tap-highlight-color: transparent;
-display: block;
-position: absolute;
-top: 2em;
-left: -6em;
-width: 6em;
-text-indent: 6em;
-height: 3em;
-border: 0;
-font-size: 1em;
-opacity: 0;
-overflow: hidden;
-padding: 0;
-white-space: nowrap;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+  transform: scale(0.25) rotate(180deg);
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  position: absolute;
+  top: 2em;
+  left: -6em;
+  width: 6em;
+  text-indent: 6em;
+  height: 3em;
+  border: 0;
+  font-size: 1em;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
 }
 
 #menu > .close:before, #menu > .close:after {
-  -moz-transition: opacity 0.2s ease;
-  -webkit-transition: opacity 0.2s ease;
-  -ms-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
   content: '';
   display: block;
@@ -424,17 +396,14 @@ white-space: nowrap;
 
 @media screen and (max-width: 736px) {
 
-  #menu {
-    -moz-transform: translateX(16.5em);
-    -webkit-transform: translateX(16.5em);
-    -ms-transform: translateX(16.5em);
-    transform: translateX(16.5em);
-    width: 16.5em;
-  }
+#menu {
+  transform: translateX(16.5em);
+  width: 16.5em;
+}
 
-  #menu > .inner {
-    padding: 2.75em 1.5em;
-  }
+#menu > .inner {
+  padding: 2.75em 1.5em;
+}
 
   #menu > .close {
     top: 0.5em;
@@ -455,9 +424,6 @@ body.is-menu-visible #wrapper {
 }
 
 body.is-menu-visible #menu {
-  -moz-transform: translateX(0);
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
   transform: translateX(0);
   visibility: visible;
 }
@@ -467,9 +433,6 @@ body.is-menu-visible #menu > * {
 }
 
 body.is-menu-visible #menu .close {
-  -moz-transform: scale(1.0) rotate(0deg);
-  -webkit-transform: scale(1.0) rotate(0deg);
-  -ms-transform: scale(1.0) rotate(0deg);
   transform: scale(1.0) rotate(0deg);
   opacity: 1;
 }
@@ -478,6 +441,8 @@ body.is-menu-visible #menu .close {
 #main {
   margin-top: 5%;
 }
+
+
 #main p {
   padding: 0 15%;
   margin-top: 5%;
@@ -495,6 +460,16 @@ body.is-menu-visible #menu .close {
 #main .titles .image {
   height: 10%;
 }
+
+.information {
+  border: 4px solid #f6f6f6;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10%;
+  margin: 0 10%;
+}
+
 /* images */
 .titles {
   display: flex;
@@ -841,9 +816,6 @@ body {
 		}
 
 		.icon.style2 {
-			-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 			background-color: transparent;
 			border: solid 1px #c9c9c9;
