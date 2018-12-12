@@ -485,6 +485,7 @@ body.is-menu-visible #menu .close {
 .titles article span img {
   width: 100%;
   border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
 }
 
 .titles h1 {
@@ -499,8 +500,6 @@ body.is-menu-visible #menu .close {
 
 @media screen and (max-width: 1800px) {
   #main {
-    margin-top: %;
-    padding:
   }
 
   .titles h1 {
@@ -530,11 +529,8 @@ body.is-menu-visible #menu .close {
   display: block;
   top: 5%;
   margin: auto;
-  width: 50%;
-  border: 3px solid #f6f6f6;
-  padding: 10px;
+  width: 60%;
   text-align: center;
-  border-radius: 10px;
 }
 
 .carre_couleur {
@@ -542,11 +538,12 @@ body.is-menu-visible #menu .close {
   height: 200px;
   display: inline-block;
   position: relative;
-  margin-top: 0px;
+  margin: 0 4%;
+  border: 3px solid #f6f6f6;
+  border-radius: 10px;
 }
 
-.base_hov .retract
-{
+.base_hov .retract {
   transition: all 200ms ease-in;
   transform-origin: 50% 20%;
   transform: scale(1);
@@ -554,31 +551,27 @@ body.is-menu-visible #menu .close {
   height: 200px;
   position: absolute;
   z-index: 2;
-  left:0;
+  border-radius: 10px;
 }
-.base_hov:hover .retract
-{
+.base_hov:hover .retract {
   transition: all 200ms ease-in;
   transform: scale(0.6);
 }
-.acced
-{
-  width: 180px;
+.acced {
+  width: 380px;
   padding:10px;
   bottom:0;
   position:absolute;
   z-index: 1;
   text-align: left;
 }
-.big_acced
-{
+.big_acced {
   color:#ffffff;
   font-size:25px;
   font-weight: 400;
   font-family:'Roboto';
 }
-.middle_acced
-{
+.middle_acced {
   color:#ffffff;
   font-size:15px;
   font-weight: 400;
